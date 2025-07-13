@@ -13,7 +13,7 @@
         "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
         "branch": "android12-platform-release",
         "name": "linux-x86-clang",
-        "binPath": ["clang-r383902/bin"]
+        "binPath": ["clang-r383902b1/bin"]
       }
     ],
     "ccache": false,
@@ -21,26 +21,24 @@
       "ARCH": "arm64",
       "CC": "clang",
       "externalCommand": {
-        "CROSS_COMPILE": "linux-x86-clang/clang-r383902/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "linux-x86-clang/clang-r383902/bin/arm-linux-gnueabi-",
-        "LD": "linux-x86-clang/clang-r383902/bin/ld.lld",
-        "AR": "linux-x86-clang/clang-r383902/bin/llvm-ar",
-        "NM": "linux-x86-clang/clang-r383902/bin/llvm-nm",
-        "OBJCOPY": "linux-x86-clang/clang-r383902/bin/llvm-objcopy",
-        "OBJDUMP": "linux-x86-clang/clang-r383902/bin/llvm-objdump",
-        "READELF": "linux-x86-clang/clang-r383902/bin/llvm-readelf",
-        "OBJSIZE": "linux-x86-clang/clang-r383902/bin/llvm-size",
-        "STRIP": "linux-x86-clang/clang-r383902/bin/llvm-strip",
-        "LDGOLD": "linux-x86-clang/clang-r383902/bin/aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "linux-x86-clang/clang-r383902/bin/llvm-ar",
-  
-        "LLVM_DIS": "linux-x86-clang/clang-r383902/bin/llvm-dis"  
-    }
-      ],
-    }
+        "CROSS_COMPILE": "linux-x86-clang/clang-r383902b1/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "linux-x86-clang/clang-r383902b1/bin/arm-linux-gnueabi-",
+        "LD": "linux-x86-clang/clang-r383902b1/bin/ld.lld",
+        "AR": "linux-x86-clang/clang-r383902b1/bin/llvm-ar",
+        "NM": "linux-x86-clang/clang-r383902b1/bin/llvm-nm",
+        "OBJCOPY": "linux-x86-clang/clang-r383902b1/bin/llvm-objcopy",
+        "OBJDUMP": "linux-x86-clang/clang-r383902b1/bin/llvm-objdump",
+        "READELF": "linux-x86-clang/clang-r383902b1/bin/llvm-readelf",
+        "OBJSIZE": "linux-x86-clang/clang-r383902b1/bin/llvm-size",
+        "STRIP": "linux-x86-clang/clang-r383902b1/bin/llvm-strip",
+        "LDGOLD": "linux-x86-clang/clang-r383902b1/bin/aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "linux-x86-clang/clang-r383902b1/bin/llvm-ar",
+        "LLVM_DIS": "linux-x86-clang/clang-r383902b1/bin/llvm-dis"
+      }
+    },
     "AnyKernel3": {
       "use": false,
-      "release": false,
+      "release": true,
       "repo": "https://github.com/osm0sis/AnyKernel3",
       "branch": "master"
     }
