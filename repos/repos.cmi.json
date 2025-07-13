@@ -10,30 +10,30 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "repo": "https://github.com/kdrag0n/proton-clang",
-        "branch": "master",
-        "name": "proton-clang",
-        "binPath": ["bin"]
+        "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
+        "branch": "android12-platform-release",
+        "name": "linux-x86-clang",
+        "binPath": ["clang-r383902/bin"]
       }
     ],
     "ccache": false,
     "params": {
       "ARCH": "arm64",
-      "CC": "proton-clang/bin/clang",
+      "CC": "clang",
       "externalCommand": {
-        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
-        "AR": "proton-clang/bin/llvm-ar",
-        "NM": "proton-clang/bin/llvm-nm",
-        "OBJCOPY": "proton-clang/bin/llvm-objcopy",
-        "OBJDUMP": "proton-clang/bin/llvm-objdump",
-        "READELF": "proton-clang/bin/llvm-readelf",
-        "OBJSIZE": "proton-clang/bin/llvm-size",
-        "STRIP": "proton-clang/bin/llvm-strip",
-        "LDGOLD": "proton-clang/bin/aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "proton-clang/bin/llvm-ar",
-        "LLVM_DIS": "proton-clang/bin/llvm-dis"
-      }
+        "CROSS_COMPILE": "linux-x86-clang/clang-r383902/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "linux-x86-clang/clang-r383902/bin/arm-linux-gnueabi-",
+        "LD": "linux-x86-clang/clang-r383902/bin/ld.lld",
+        "AR": "linux-x86-clang/clang-r383902/bin/llvm-ar",
+        "NM": "linux-x86-clang/clang-r383902/bin/llvm-nm",
+        "OBJCOPY": "linux-x86-clang/clang-r383902/bin/llvm-objcopy",
+        "OBJDUMP": "linux-x86-clang/clang-r383902/bin/llvm-objdump",
+        "READELF": "linux-x86-clang/clang-r383902/bin/llvm-readelf",
+        "OBJSIZE": "linux-x86-clang/clang-r383902/bin/llvm-size",
+        "STRIP": "linux-x86-clang/clang-r383902/bin/llvm-strip",
+        "LDGOLD": "linux-x86-clang/clang-r383902/bin/aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "linux-x86-clang/clang-r383902/bin/llvm-ar",
+        "LLVM_DIS": "linux-x86-clang/clang-r383902/bin/llvm-dis"
     },
     "AnyKernel3": {
       "use": false,
