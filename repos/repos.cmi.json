@@ -33,8 +33,11 @@
         "STRIP": "linux-x86-clang/clang-r383902/bin/llvm-strip",
         "LDGOLD": "linux-x86-clang/clang-r383902/bin/aarch64-linux-gnu-ld.gold",
         "LLVM_AR": "linux-x86-clang/clang-r383902/bin/llvm-ar",
-        "LLVM_DIS": "linux-x86-clang/clang-r383902/bin/llvm-dis"
-    },
+  
+        "LLVM_DIS": "linux-x86-clang/clang-r383902/bin/llvm-dis"  
+    }
+      ],
+    }
     "AnyKernel3": {
       "use": false,
       "release": false,
